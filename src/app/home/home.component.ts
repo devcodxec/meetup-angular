@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor() { }
+  title: string = 'Meetup';
 
 }
