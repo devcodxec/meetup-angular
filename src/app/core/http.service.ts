@@ -25,7 +25,7 @@ export class HttpService {
   private printDirectly: boolean;
 
   constructor(private http: HttpClient, private snackBar: SnackBar, private router: Router) {
-    this.resetOptions();
+     this.resetOptions();
   }
 
   login(username: string, password: string, endPoint: string): Observable<any> {
