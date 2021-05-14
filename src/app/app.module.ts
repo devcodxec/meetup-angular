@@ -11,7 +11,10 @@ import { TemasComponent } from './home/temas/temas.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 // Importamos los servicios
 import { RegistroService } from './shared/registro/servicio/registro.service';
 import { HttpService } from './core/http.service';
@@ -31,7 +34,11 @@ import { HttpService } from './core/http.service';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatAutocompleteModule
   ],
   providers: [
     RegistroService,
