@@ -6,7 +6,7 @@ import {Role} from './role.model';
 
 @Injectable()
 export class TokensService {
-  static END_POINT = '/usuarios/token';
+  static END_POINT = '/api/usuarios';
 
   constructor(private httpService: HttpService) {
   }
